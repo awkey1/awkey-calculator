@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Chakra Petch");
+
+body {
+    background: linear-gradient(0deg, rgba(34,43,117,1) 0%, rgba(121,9,9,1) 29%, rgba(7,147,150,1) 66%, rgba(34,43,117,1) 100%);
+}
+* {
+    font-family: 'Chakra Petch';
+    font-weight: 700;
+}
+
+#calculator {
+    margin: auto;
+    width: 80%;
+    border: 4px outset dimgray;
+    background: linear-gradient(166deg, rgba(161,161,161,1) 0%, rgba(36,36,36,1) 100%);
+}
+#display {
+    width: 90%;
+    height: 100px;
+    background: rgb(56, 56, 56);
+    color: rgb(30, 255, 0);
+    text-align: right;
+    font-size: 70px;
+    padding: 0 5px;
+    margin: auto;
+    border: 4px inset dimgray;
+    overflow-x: auto;
+    overflow-wrap: normal;
+    white-space: nowrap;
+}
+.buttons, #buttonsd {
+    margin: 7px;
+    border: 4px inset dimgray;
+    background: dimgray;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+}
+#buttonsd {
+    display: flex;
+    justify-content: flex-end;
+}
+button {
+    width: 25%;
+    height: 60px;
+    background: gray;
+    margin: 0 5px;
+    font-size: 40px;
+    user-select: none;
+}
+#divi, #mult, #addi, #subt, #modu {
+    background: rgb(161, 161, 161);
+}
+#clear, #backs {
+    background: rgb(216, 91, 91);
+}
+#equa {
+    background: rgb(126, 216, 91);
+}
+
+::selection {
+    background: rgba(153, 255, 0, 0.815);
+    color: black;
+}
+
+h1 {
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    #clear {
+        font-size: 20px;
+    }
+}
